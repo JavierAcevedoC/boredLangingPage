@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.sass';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="flex-grid">
+        <div className="left">
+          <h1 className="title">Hell<a className="letterO">o <i className="fire"> { createFire() } </i></a>!</h1>
+          <h2 className="subtitle">*Code and some creativity*</h2>
+          <h5 className="codes">@ {'</>'} </h5>
+        </div>
+        <div>
+          <img className="meImage" src="https://avatars.githubusercontent.com/u/25872239" alt="Hey there its me!"/>
+        </div>
+      </div>
     </div>
+  );
+}
+
+function createFire() {
+    return (
+    <i>
+      {Array.from({ length: 50 }, (_, __) => (
+        <strong className="particle"></strong>
+      ))}
+    </i>
   );
 }
 
