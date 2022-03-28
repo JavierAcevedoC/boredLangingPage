@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.sass';
-import me from './me.jpeg';
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
           <h5 className="codes">@ {'</>'} </h5>
         </div>
         <div>
-          <img className="meImage" src={me} alt="Hey there its me!"/>
+          <img className="meImage" src="https://avatars.githubusercontent.com/u/25872239" alt="Hey there its me!"/>
         </div>
       </div>
     </div>
